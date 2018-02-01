@@ -5,7 +5,7 @@ import React from 'react';
 var utils = require('./utils');
 var classNames = require('classnames');
 import ComposedComponent from './ComposedComponent';
-import DatePicker from 'material-ui/DatePicker/DatePicker';
+import { DatePicker } from 'material-ui-pickers'
 
 /**
  * There is no default number picker as part of Material-UI.
@@ -24,7 +24,7 @@ class Date extends React.Component {
     }
 
     render() {
-        var value = null;
+        let value = null;
         if (this.props && this.props.value) {
             value = this.props.value;
         }

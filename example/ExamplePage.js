@@ -17,7 +17,7 @@ require('rc-select/assets/index.css');
 import RcSelect from 'react-schema-form-rc-select/lib/RcSelect';
 import RaisedButton from 'material-ui/Button';
 
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { createMuiTheme } from 'material-ui-next/styles';
 import lightRawTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
 
