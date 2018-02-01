@@ -17,9 +17,13 @@ require('rc-select/assets/index.css');
 import RcSelect from 'react-schema-form-rc-select/lib/RcSelect';
 import RaisedButton from 'material-ui/Button';
 
-import { createMuiTheme } from 'material-ui-next/styles';
-import lightRawTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
+const theme = createMuiTheme({
+  palette: {
+    type: 'light', // Switching the dark mode on is a single property value change.
+  },
+});
 
 var ExamplePage = React.createClass({
 
@@ -56,7 +60,7 @@ var ExamplePage = React.createClass({
             schemaJson: '',
             formJson: '',
             selected: '',
-            muiTheme: getMuiTheme(lightRawTheme)
+            muiTheme: theme
         };
     },
 
