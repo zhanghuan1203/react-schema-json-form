@@ -1,14 +1,14 @@
-# react-schema-form
+# react-schema-json-form
 
-[![Join the chat at https://gitter.im/networknt/react-schema-form](https://badges.gitter.im/networknt/react-schema-form.svg)](https://gitter.im/networknt/react-schema-form?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/networknt/react-schema-json-form](https://badges.gitter.im/networknt/react-schema-json-form.svg)](https://gitter.im/networknt/react-schema-json-form?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![npm package](https://img.shields.io/npm/v/react-schema-form.svg?style=flat-square)](https://www.npmjs.org/package/react-schema-form)
+[![npm package](https://img.shields.io/npm/v/react-schema-json-form.svg?style=flat-square)](https://www.npmjs.org/package/react-schema-json-form)
 
 [React](http://facebook.github.io/react/) forms based on json schema for form generation and validation. This is a port of the [angular schema form](https://github.com/Textalk/angular-schema-form) project using
 [material-ui](http://www.material-ui.com/) for the underlying components.
 
 # Live demo
-[demo](http://networknt.github.io/react-schema-form/)
+[demo](http://networknt.github.io/react-schema-json-form/)
 
 While you are trying the demo forms, you can update the schema and form in the json editor to see the instant re-rendered form. This is a way to build form interactively.
 
@@ -31,17 +31,17 @@ Then open localhost:8080 in a browser.
 # Installation
 
 ```sh
-npm install react-schema-form --save
+npm install react-schema-json-form --save
 ```
 
-There is one added on component react-schema-form-rc-select for multiple select and dynamically loading dropdown from server. To install it.
+There is one added on component react-schema-json-form-rc-select for multiple select and dynamically loading dropdown from server. To install it.
 ```
-npm install react-schema-form-rc-select --save
+npm install react-schema-json-form-rc-select --save
 ```
 
 # Usage
 ```js
-var { SchemaForm } = require('react-schema-form');
+var { SchemaForm } = require('react-schema-json-form');
 
 <SchemaForm schema={this.state.schema} form={this.state.form} model={this.props.model} onModelChange={this.props.onModelChange} />
 
@@ -67,20 +67,20 @@ backend APIs.
 
 # Form format
 
-React-schema-form implements the form format as defined by the json-schema-form standard.
+react-schema-json-form implements the form format as defined by the json-schema-form standard.
 
 The documentation for that format is located at the [json-schema-form wiki](https://github.com/json-schema-form/json-schema-form/wiki/Documentation).
 
 # Customization
-react-schema-form provides most fields including FieldSet and Array and they might cover most use cases; however, you might have requirement that needs something that is not built in. In this case, you
+react-schema-json-form provides most fields including FieldSet and Array and they might cover most use cases; however, you might have requirement that needs something that is not built in. In this case, you
 can implement your own field and inject it into the generic mapper for the builder to leverage your component. By passing a mapper as a props to the SchemaForm, you can replace built in component with
 yours or you can define a brand new type and provide your component to render it.
 
-[react-schema-form-rc-select](https://github.com/networknt/react-schema-form-rc-select) is an example to provide multiple select to the react schema form.
+[react-schema-json-form-rc-select](https://github.com/networknt/react-schema-json-form-rc-select) is an example to provide multiple select to the react schema form.
 
 ```js
 require('rc-select/assets/index.css');
-import RcSelect from 'react-schema-form-rc-select/lib/RcSelect';
+import RcSelect from 'react-schema-json-form-rc-select/lib/RcSelect';
 ...
 
         var mapper = {
@@ -100,7 +100,7 @@ import RcSelect from 'react-schema-form-rc-select/lib/RcSelect';
 
 # Contributing
 
-See our [CONTRIBUTING.md](https://github.com/networknt/react-schema-form/CONTRIBUTING.md) for information on how to contribute.
+See our [CONTRIBUTING.md](https://github.com/networknt/react-schema-json-form/CONTRIBUTING.md) for information on how to contribute.
 
 
 # License
