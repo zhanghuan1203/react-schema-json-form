@@ -8,7 +8,7 @@
 [material-ui](http://www.material-ui.com/) for the underlying components.
 
 # Live demo
-[demo](http://networknt.github.io/react-schema-json-form/)
+[demo](http://networknt.github.io/react-schema-form/)
 
 While you are trying the demo forms, you can update the schema and form in the json editor to see the instant re-rendered form. This is a way to build form interactively.
 
@@ -36,7 +36,7 @@ npm install react-schema-json-form --save
 
 There is one added on component react-schema-json-form-rc-select for multiple select and dynamically loading dropdown from server. To install it.
 ```
-npm install react-schema-json-form-rc-select --save
+npm install react-schema-form-rc-select --save
 ```
 
 # Usage
